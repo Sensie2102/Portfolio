@@ -27,7 +27,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+
+      <div className="relative min-h-screen w-full">
+          <div
+            className="absolute inset-0 -z-20 bg-cover bg-center bg-no-repeat animate-pulse-brightness"
+            style={{ backgroundImage: "url('/galaxy.jpg')" }}
+          />
+          
+
+          <div className="absolute inset-0 -z-10 bg-[var(--background)]/80" />
+        
+          {children}
+        </div>
       </body>
     </html>
   );
