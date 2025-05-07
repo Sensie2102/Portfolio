@@ -3,6 +3,7 @@ import "@/icons/fontawesome";
 import HomeComponent from "@/components/pages/Home/Home";
 import AboutmeComponent from "@/components/pages/About/Aboutme";
 import Project from "@/components/pages/Projects/Project";
+import Contact from "@/components/pages/Contact/Contact";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <HomeComponent />
       <AboutmeComponent />
       <Project />
+      <Contact />
     </main>
   );
 }
