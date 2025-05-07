@@ -5,11 +5,11 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile, faMeteor } from '@fortawesome/free-solid-svg-icons';
 import ScrambleText from '../ScrambleText/ScrambleText';
-const skills = ["React","Node.js","Mongodb","PostgresSQL"]
+const skills = ["React","Node.js","Mongodb","PostgresSQL","Python"]
 
 const HomeComponent = () => {
   return (
-    <section id="home" className="min-h-[calc(100vh-64px)] flex items-center justify-center px-8 py-8">
+    <section id="home" className="min-h-[calc(100vh-64px)] flex items-center justify-center px-8 py-24">
       <div className="w-full max-w-6xl grid grid-cols-2 gap-8 bg-[var(--foreground)]/5 rounded-2xl shadow-lg backdrop-blur-sm p-8 items-center">
 
         <div className="flex flex-col h-full items-start justify-center px-4 text text-[var(--foreground)] space-y-4">
