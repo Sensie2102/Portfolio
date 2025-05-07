@@ -14,7 +14,7 @@ const MetricCard: React.FC<MetricCardProps> = ({CardIcon, CardTitle, CardDescrip
   return (
     <div className="grid grid-cols-[auto_1fr_auto] gap-4 w-full">
             <div className="flex flex-col items-start gap-4">
-                <div className="bg-[var(--highlight)]/10 p-3 rounded-full">
+                <div className="bg-[var(--highlight)]/30 p-3 rounded-full">
                     <FontAwesomeIcon
                         icon={CardIcon ?? faCode}
                         className="h-6 w-6 text-[var(--foreground)]"

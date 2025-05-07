@@ -1,10 +1,11 @@
 import React from 'react'
-import Capsule from '../Capsules/Capsule';
-import Button from '../Buttons/Button';
+import Capsule from '../../Capsules/Capsule';
+import Button from '../../Buttons/Button';
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFile, faMeteor } from '@fortawesome/free-solid-svg-icons';
-import ScrambleText from '../ScrambleText/ScrambleText';
+import ScrambleText from '../../ScrambleText/ScrambleText';
+import Link from 'next/link';
 const skills = ["React","Node.js","Mongodb","PostgresSQL","Python"]
 
 const HomeComponent = () => {
@@ -34,7 +35,9 @@ const HomeComponent = () => {
             })}
           </div>
           <div className='flex gap-6 py-2'>
-            <Button variant='outline' size='medium' className='rounded-xl min-w-[160px]'>Projects</Button>
+            <Link href="#projects">
+              <Button variant='outline' size='medium' className='rounded-xl min-w-[160px]'>Projects</Button>
+            </Link>
             <Button variant='outline' size='medium' className='rounded-xl min-w-[160px]'>Contact</Button>
           </div>
           <div className='flex gap-6 py-2'>
