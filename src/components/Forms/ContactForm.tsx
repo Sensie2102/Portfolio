@@ -18,17 +18,17 @@ const ContactForm = () => {
         <input
           type="text"
           placeholder="Your name"
-          className="bg-transparent border border-[var(--foreground)]/20 text-[var(--foreground)] px-4 py-3 rounded-md placeholder-[var(--foreground)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--highlight)]"
+          className="bg-transparent border border-[var(--foreground)]/20 text-[var(--foreground)] px-4 py-3 rounded-md placeholder-[var(--foreground)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/50"
         />
         <input
           type="email"
           placeholder="Your email"
-          className="bg-transparent border border-[var(--foreground)]/20 text-[var(--foreground)] px-4 py-3 rounded-md placeholder-[var(--foreground)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--highlight)]"
+          className="bg-transparent border border-[var(--foreground)]/20 text-[var(--foreground)] px-4 py-3 rounded-md placeholder-[var(--foreground)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/50"
         />
         <textarea
           placeholder="Your message"
           rows={4}
-          className="bg-transparent border border-[var(--foreground)]/20 text-[var(--foreground)] px-4 py-3 rounded-md placeholder-[var(--foreground)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--highlight)] resize-none"
+          className="bg-transparent border border-[var(--foreground)]/20 text-[var(--foreground)] px-4 py-3 rounded-md placeholder-[var(--foreground)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/50 resize-none"
         />
         <Button variant='primary' className="flex items-center justify-center gap-2 rounded-xl">
           <FontAwesomeIcon icon={faPaperPlane} /> Send Message
@@ -49,7 +49,7 @@ const ContactForm = () => {
           href="https://www.linkedin.com/in/mafaaz-sabir/"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 p-4 rounded-xl border border-[var(--foreground)]/10 bg-[var(--foreground)]/5 backdrop-blur-sm hover:bg-[var(--foreground)]/10 transition"
+          className="flex items-center gap-4 p-4 rounded-xl border border-[var(--foreground)]/10 bg-[var(--foreground)]/5 backdrop-blur-sm hover:bg-[var(--accent)]/20 transition"
         >
           <div className="text-white-500 text-2xl"><FontAwesomeIcon icon={faLinkedin} className='h-7 w-7'/></div>
           <div className="flex flex-col">
@@ -63,7 +63,7 @@ const ContactForm = () => {
           href="https://discord.com/users/_sensie21"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 p-4 rounded-xl border border-[var(--foreground)]/10 bg-[var(--foreground)]/5 backdrop-blur-sm hover:bg-[var(--foreground)]/10 transition"
+          className="flex items-center gap-4 p-4 rounded-xl border border-[var(--foreground)]/10 bg-[var(--foreground)]/5 backdrop-blur-sm hover:bg-[var(--accent)]/20 transition"
         >
           <div className="text-indigo-400 text-2xl"><FontAwesomeIcon icon={faDiscord} className='h-7 w-7'/></div>
           <div className="flex flex-col">
@@ -77,7 +77,7 @@ const ContactForm = () => {
           href="https://github.com/Sensie2102"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-4 p-4 rounded-xl border border-[var(--foreground)]/10 bg-[var(--foreground)]/5 backdrop-blur-sm hover:bg-[var(--foreground)]/10 transition"
+          className="flex items-center gap-4 p-4 rounded-xl border border-[var(--foreground)]/10 bg-[var(--foreground)]/5 backdrop-blur-sm hover:bg-[var(--accent)]/20 transition"
         >
           <div className="text-[var(--foreground)] text-2xl"><FontAwesomeIcon icon={faGithub} className='h-7 w-7'/></div>
           <div className="flex flex-col">

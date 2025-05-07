@@ -11,7 +11,7 @@ interface CapsuleProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<Variant, string> = {
     primary: " border border-[var(--foreground)] text-[var(--foreground)] hover:backdrop-blur-sm",
-    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent)] to-[var(--highlight)] hover:backdrop-blur-sm shadow-[0_0_6px_var(--highlight)]",
+    gradient: "text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent)] to-[var(--highlight)] hover:backdrop-blur-sm shadow-[0_0_6px_var(--accent)]",
   };
   
     

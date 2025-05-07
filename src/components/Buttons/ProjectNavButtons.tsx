@@ -19,8 +19,8 @@ const ProjectNavButtons: React.FC<ProjectNavButtonsProps> = ({
 }) => {
   const isActive = activeTab === buttonId;
   const baseClass = 'w-full flex flex-col items-center rounded-2xl py-2';
-  const activeClass = 'bg-[var(--highlight)]/25';
-  const hoverClass = 'hover:bg-[var(--highlight)]/30 transition-all duration-300 ease-in-out';
+  const activeClass = 'bg-[var(--accent)]/25';
+  const hoverClass = 'hover:bg-[var(--accent)]/30 transition-all duration-300 ease-in-out';
 
   return (
     <button
