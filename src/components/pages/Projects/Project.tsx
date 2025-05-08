@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import ProjectNavbar from '../../NavBar/ProjectNavbar'
 import ProjectsDisplay from '@/components/DisplayContainers/ProjectsDisplay/ProjectsDisplay';
+import TechStackContainer from '@/components/DisplayContainers/TechStackContainer/TechStackContainer';
 
 
 const Project = () => {
@@ -20,7 +21,7 @@ const Project = () => {
           <ProjectNavbar activeTab={activeTab} setActiveTab={setActiveTab} />
           {activeTab === 'projects' && <ProjectsDisplay />}
           {activeTab === 'certificates' && <div>Certificates</div>}
-          {activeTab === 'techstack' && <div>Tech Stack</div>}
+          {activeTab === 'techstack' && <TechStackContainer />}
         </div>
     </section>
   )

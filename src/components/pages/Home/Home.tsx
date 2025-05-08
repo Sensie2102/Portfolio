@@ -38,7 +38,9 @@ const HomeComponent = () => {
             <Link href="#projects">
               <Button variant='outline' size='medium' className='rounded-xl min-w-[160px]'>Projects</Button>
             </Link>
+            <Link href="#contact">
             <Button variant='outline' size='medium' className='rounded-xl min-w-[160px]'>Contact</Button>
+            </Link>
           </div>
           <div className='flex gap-6 py-2'>
             <a href="https://github.com/Sensie2102" target="_blank" rel="noopener noreferrer">
