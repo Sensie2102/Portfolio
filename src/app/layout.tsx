@@ -1,6 +1,8 @@
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,6 +40,7 @@ export default function RootLayout({
           <div className="absolute inset-0 -z-10 bg-[var(--background)]/80" />
         
           {children}
+          <Toaster position="bottom-center" reverseOrder={false} />
         </div>
       </body>
     </html>

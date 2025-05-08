@@ -3,6 +3,9 @@ import Button from '../../Buttons/Button';
 import Card from '../../Card/Card';
 import { faGlobe, faMedal } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
+import { certificates } from '../../../../data/certificates';
+import { projects } from '../../../../data/projects';
+
 
 const AboutmeComponent = () => {
   return (
@@ -39,14 +42,14 @@ const AboutmeComponent = () => {
           CardType="metric"
           CardTitle="Total Projects"
           CardDescription="Innovative web and Gen AI solutions"
-          CardData="4"
+          CardData={projects.length}
         />
         <Card
           CardType="metric"
           CardTitle="Certificates"
           CardDescription="Professional certifications in AI and Cloud Platforms"
           CardIcon={faMedal}
-          CardData="4"
+          CardData={certificates.length}
         />
         <Card
           CardType="metric"

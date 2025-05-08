@@ -32,7 +32,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ProjectTitle, ProjectImage, Pr
                 rel="noopener noreferrer"
                 className="text-sm text-[var(--accent)] hover:underline flex items-center gap-1"
               >
-                Live Demo
+                Github Link
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
                   className="h-3 w-3"
