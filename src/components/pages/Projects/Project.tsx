@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import ProjectNavbar from '../../NavBar/ProjectNavbar'
 import ProjectsDisplay from '@/components/DisplayContainers/ProjectsDisplay/ProjectsDisplay';
 import TechStackContainer from '@/components/DisplayContainers/TechStackContainer/TechStackContainer';
+import CertificatesDisplay from '@/components/DisplayContainers/CertificatesDisplay/CertificatesDisplay';
 
 
 const Project = () => {
@@ -20,7 +21,7 @@ const Project = () => {
         <div className='flex flex-col justify-center gap-6 w-full max-w-7xl'>
           <ProjectNavbar activeTab={activeTab} setActiveTab={setActiveTab} />
           {activeTab === 'projects' && <ProjectsDisplay />}
-          {activeTab === 'certificates' && <div>Certificates</div>}
+          {activeTab === 'certificates' && <CertificatesDisplay />}
           {activeTab === 'techstack' && <TechStackContainer />}
         </div>
     </section>

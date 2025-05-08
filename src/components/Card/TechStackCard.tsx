@@ -10,7 +10,7 @@ const TechStackCard: React.FC<TechStackCardProps> = ({ techTitle, techIcon, clas
   return (
     <div
   className={`flex flex-col items-center justify-center w-full h-full p-6 backdrop-blur-xl
-    bg-[var(--accent)]/30 rounded-xl hover:bg-[var(--accent)]/50
+    bg-[var(--foreground)]/20 rounded-xl hover:bg-[var(--accent)]/50
     ${className}`}
 >
   <img

@@ -2,6 +2,7 @@ import { faArrowRight, faArrowUpRightFromSquare } from '@fortawesome/free-solid-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import Button from '../Buttons/Button';
+import Link from 'next/link';
 
 
 interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -23,29 +24,30 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ProjectTitle, ProjectImage, Pr
           )}
           <h3 className="text-xl font-semibold text-[var(--foreground)]">{ProjectTitle}</h3>
           <p className="text-[var(--foreground)]/70">{ProjectDescription}</p>
-          <div className="flex justify-between items-center mt-auto">
+          <div className="flex justify-between items-center mt-auto pl-2">
             {ProjectLink && (
-              <a
+              <Link
                 href={ProjectLink? ProjectLink : '#'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-blue-500 hover:underline flex items-center gap-1"
+                className="text-sm text-[var(--accent)] hover:underline flex items-center gap-1"
               >
                 Live Demo
                 <FontAwesomeIcon
                   icon={faArrowUpRightFromSquare}
                   className="h-3 w-3"
                 />
-              </a>
+              </Link>
             )}
+    
             <Button
-              variant="outline"
-              size="small"
-              className="px-4 py-1.5 text-sm rounded-md"
-            >
-              Details
-              <FontAwesomeIcon icon={faArrowRight} className="ml-1 h-3 w-3" />
-            </Button>
+                variant="outline"
+                size="small"
+                className="px-4 py-1.5 text-sm rounded-md"
+              >
+                Details
+                <FontAwesomeIcon icon={faArrowRight} className="ml-1 h-3 w-3" />
+              </Button>
           </div>
         </div>
   )

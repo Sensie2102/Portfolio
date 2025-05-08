@@ -35,7 +35,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className="flex flex-col bg-[var(--foreground)]/10 rounded-2xl shadow-lg backdrop-blur-sm p-6 w-full max-w-md min-h-[180px]"
+      className="flex flex-col bg-[var(--foreground)]/10 rounded-2xl shadow-lg backdrop-blur-sm p-6 w-full max-w-md min-h-[180px] hover:bg-[var(--accent)]/25"
       {...rest}
     >
       {CardType === 'metric' ? (
